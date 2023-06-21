@@ -120,6 +120,7 @@ body {
 @media (max-width: 1200px) {
     .cabecalho {
         padding: 10%;
+        width: auto;
     }
 
     .cabecalho__menu {
@@ -140,6 +141,7 @@ body {
         padding: 5%;
         align-items: center;
         justify-content: center;
+        width: auto;
     }
     
     .card__logo {
