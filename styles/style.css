@@ -38,7 +38,7 @@
 }
 
 a:hover {
-    color: var(--cor-hover);
+    color: var(--cor-secundaria);
     transition: 0.30s;
 }
 
@@ -171,6 +171,11 @@ body {
         text-align: center;
         
     }
+
+    .active {
+        color: var(--cor-hover) !important;
+    }
+
     .navigation_header a{
         margin-bottom: 15%;
         font-size: 1.2rem;
