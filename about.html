@@ -10,24 +10,47 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-          <a class="cabecalho__menu__link" href="./index.html">Home</a>
-          <a class="cabecalho__menu__link" href="./about.html">Sobre mim</a>
-          <a class="cabecalho__menu__link" href="./exp.html">Experiências Profissionais</a>
-        </nav>  
-      </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
-            <p class="apresentacao__conteudo__texto">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-            <p class="apresentacao__conteudo__texto">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores ipsum delis forum birol parela maxime infena. Excepteur sint occaecat cupidatat non.            </p>
+    <header class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg></button>
+        <nav class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-x" viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg></button>
+            <a href="./index.html">Home</a>
+            <a class="active" href="./about.html">Sobre mim</a>
+            <a href="./about.html">Escolaridade</a>
+            <a href="./exp.html">Experiências Profissionais</a>
+            <a href="./about.html">Atividades Complementares</a>
+            <a href="./about.html">Contato</a>
+        </nav>
+    </header>
+    <main tabindex="0" class="main" onfocus="closeSidebar()" id="main">
+        <section class="main_content">
+            <h1 class="content_title">Sobre mim</h1>
+            <p class="content_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est
+                laborum et dolorum fuga.</p>
+            <p class="content_text">Et harum quidem rerum facilis est et expedita distinctio. Nam
+                libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+                quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae
+                sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+                voluptatibus maiores alias consequatur aut perferendis doloribus asperiores ipsum delis forum birol
+                parela maxime infena. Excepteur sint occaecat cupidatat non. </p>
         </section>
-        <img class="apresentacao__imagem" src="./assets/Imagem.png" alt="Foto da Joana Santos programando">
+        <img class="profile_image" src="./assets/Imagem.png" alt="Foto da Joana Santos programando">
     </main>
-    <footer class="rodape">
+    <footer class="footer">
         <p>Desenvolvido por Rafael Lima</p>
     </footer>
+    <script src="/main.js"></script>
 </body>
 
 </html>

@@ -9,127 +9,151 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
-<header class="cabecalho">
-    <nav class="cabecalho__menu">
-        <a class="cabecalho__menu__link" href="./index.html">Home</a>
-        <a class="cabecalho__menu__link" href="./about.html">Sobre mim</a>
-        <a class="cabecalho__menu__link" href="./exp.html">Experiências Profissionais</a>
-    </nav>
-</header>
-<main>
-    <div class="container">
-        <h1 class="apresentacao apresentacao__conteudo__titulo">Por onde passei</h1>
-        <div class="cards direita" data-aos="fade-right">
-            <div class="card">
-                <section class="card__logo">
-                    <img src="assets/senior.png" alt="logo empresa Senior Sistemas">
-                </section>
-                <section>
-                    <h1 class="card__titulo">Senior Sistemas – (Fev/2021 – Atual) </h1>
-                    <h2 class="card__subtitulo">Cargo: Analista de Implantação II</h2>
-                    <p class="card__texto">Principais responsabilidades: <br>
-                        • Implantação de projetos ágeis do sistema Senior HCM.<br>
-                        • Principais módulos implantamos: administração de pessoal, benefícios, controle de ponto,
-                        segurança e medicina. <br>
-                        • Busca constante por inovação e automação de processos na área.<br>
-                        • Manuseio do banco de dados de cliente em linguagem SQL.<br>
-                        • Criação de script para redução de tempo na implantação.<br>
-                        • Reestruturação e otimização de processos de implantação.<br>
+    <header class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg></button>
+        <nav class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-x" viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg></button>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">Sobre mim</a>
+            <a href="./about.html">Escolaridade</a>
+            <a class="active" href="./exp.html">Experiências Profissionais</a>
+            <a href="./about.html">Atividades Complementares</a>
+            <a href="./about.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="main content_text_exp">Por onde passei</h1>
+            <div class="cards right" data-aos="fade-right">
+                <div class="card">
+                    <section class="card_logo">
+                        <img src="assets/senior.png" alt="logo empresa Senior Sistemas">
+                    </section>
+                    <section>
+                        <h1 class="card__title">Senior Sistemas – (Fev/2021 – Atual) </h1>
+                        <h2 class="card__subtitle">Cargo: Analista de Implantação II</h2>
+                        <p class="card__texto">Principais responsabilidades: <br>
+                            • Implantação de projetos ágeis do sistema Senior HCM.<br>
+                            • Principais módulos implantamos: administração de pessoal, benefícios, controle de ponto,
+                            segurança e medicina. <br>
+                            • Busca constante por inovação e automação de processos na área.<br>
+                            • Manuseio do banco de dados de cliente em linguagem SQL.<br>
+                            • Criação de script para redução de tempo na implantação.<br>
+                            • Reestruturação e otimização de processos de implantação.<br>
+                        </p>
+                    </section>
+                </div>
+                <div class="card esquerda" data-aos="fade-left">
+                    <section class="card__logo ">
+                        <img src="assets/decanter.png" alt="logo empresa Decanter">
+                    </section>
+                    <section>
+                        <h1 class="card__title">Decanter Vinhos Finos – (Set/2020 – Fev/2021) </h1>
+                        <h2 class="card__subtitle">Cargo: Assistente de RH</h2>
+                        <p class="card__texto">Principais responsabilidades: <br>
+                            • Implantação do departamento pessoal e RH na empresa; <br>
+                            • Implantação de políticas de internas de RH, cargos e salários, processos e rotinas do
+                            setor; <br>
+                            • Implantação da folha de pagamento interna com o TOVTs Protheus; <br>
+                            • Responsável por toda a parte de folha de pagamento (cálculo, conferência, férias,
+                            transmissão,
+                            etc) <br>
+                        </p>
+                    </Section>
+                </div>
+                <div class="card direita" data-aos="fade-right">
+                    <section class="card__logo">
+                        <img src="assets/estaleiro.png" alt="logo empresa Estaleiro Rio Maguari">
+                    </section>
+                    <Section>
+                        <h1 class="card__title">Estaleiro Rio Maguari – (Jun/2015 – Ago/2019) </h1>
+                        <h2 class="card__subtitle">Cargo: Analista de RH</h2>
+                        <p class="card__texto">Principais responsabilidades: <br>
+                            • Responsável pelos processos de relações trabalhistas, desenvolvendo as atividades de
+                            cálculos
+                            rescisórios no sistema Protheus da TOTVs, homologação, folha de ponto, afastamentos,
+                            pagamentos,
+                            encargos, férias, admissão, preposto, gestão de benefícios; <br>
+                            • responsabilidades pelos processos de relações trabalhistas, desenvolvendo as atividades de
+                            cálculos rescisórios no sistema Protheus da TOTVs, homologação, folha de ponto,
+                            afastamentos,
+                            pagamentos, encargos, férias, admissão, preposto, gestão de benefícios, sendo a segunda
+                            pessoa
+                            do
+                            Gerente. <br>
+                    </Section>
                     </p>
-                </section>
-            </div>
-            <div class="card esquerda" data-aos="fade-left">
-                <section class="card__logo ">
-                    <img src="assets/decanter.png" alt="logo empresa Decanter">
-                </section>
-                <section>
-                <h1 class="card__titulo">Decanter Vinhos Finos – (Set/2020 – Fev/2021) </h1>
-                <h2 class="card__subtitulo">Cargo: Assistente de RH</h2>
-                <p class="card__texto">Principais responsabilidades: <br>
-                    • Implantação do departamento pessoal e RH na empresa; <br>
-                    • Implantação de políticas de internas de RH, cargos e salários, processos e rotinas do setor; <br>
-                    • Implantação da folha de pagamento interna com o TOVTs Protheus; <br>
-                    • Responsável por toda a parte de folha de pagamento (cálculo, conferência, férias, transmissão,
-                    etc) <br>
-                </p>
-            </Section>
-            </div>
-            <div class="card direita" data-aos="fade-right">
-                <section class="card__logo">
-                    <img src="assets/estaleiro.png" alt="logo empresa Estaleiro Rio Maguari">
-                </section>
-                <Section>
-                    <h1 class="card__titulo">Estaleiro Rio Maguari – (Jun/2015 – Ago/2019) </h1>
-                    <h2 class="card__subtitulo">Cargo: Analista de RH</h2>
-                    <p class="card__texto">Principais responsabilidades: <br>
-                        • Responsável pelos processos de relações trabalhistas, desenvolvendo as atividades de cálculos
-                        rescisórios no sistema Protheus da TOTVs, homologação, folha de ponto, afastamentos, pagamentos,
-                        encargos, férias, admissão, preposto, gestão de benefícios; <br>
-                        • responsabilidades pelos processos de relações trabalhistas, desenvolvendo as atividades de
-                        cálculos rescisórios no sistema Protheus da TOTVs, homologação, folha de ponto, afastamentos,
-                        pagamentos, encargos, férias, admissão, preposto, gestão de benefícios, sendo a segunda pessoa
-                        do
-                        Gerente. <br>
-                </Section>
-                </p>
-            </div>
-            <div class="card esquerda" data-aos="fade-left">
-                <section class="card__logo">
-                    <img src="assets/agropalma.png" alt="logo empresa Agropalma">
-                </section>
-                <section>
-                    <h1 class="card__titulo">Agropalma – (Jul/2014 – Mar/2015)</h1>
-                    <h2 class="card__subtitulo">Cargo: Analista de Cargos e Salários</h2>
-                    <p class="card__texto">Principais responsabilidades: <br>
-                        • Responsável pelas pesquisas salariais, avaliação de desempenho, analise de processos de
-                        aumento
-                        salarial por mérito e promoções, estudo de custos com pessoal e descrição de cargos. Utilizava o
-                        sistema Sênior; <br>
-                        • Participação em projetos: implantação de plano de saúde e de remuneração variável,
-                        reformulação de
-                        descrição de cargos e políticas de remuneração, cargos e salários. <br>
-                </Section>
-                </p>
-            </div>
-            <div class="card direita" data-aos="fade-right">
-                <section class="card__logo">
-                    <img src="assets/cadam.png" alt="logo empresa CADAM">
-                </section>
-                <section>
-                    <h1 class="card__titulo">CADAM S.A. – (Abril/2012 – Jul/2014) </h1>
-                    <h2 class="card__subtitulo">Cargo: Técnico Administrativo</h2>
-                    <p class="card__texto">Principais responsabilidades: <br>
-                        • Responsável por todos os processos de RH, assim como área de Relações Trabalhistas, exercendo
-                        atividades de departamento de pessoal (cálculos de folha de pagamento no sistema FPW,
-                        fiscalizações
-                        e auditorias, soluções pendências e problemas nos órgãos da Receita Federal, Caixa Econômica, e
-                        INSS, admissão, rescisão, homologação, folha de ponto, pagamentos e encargos); <br>
-                        • Representante do RH internacional; <br>
-                        • Responsável pelo recrutamento e seleção, treinamento e desenvolvimento, participação em
-                        reuniões
-                        estratégicas, avaliação de desempenho e orçamento de pessoal. <br>
-                </Section>
-                </p>
+                </div>
+                <div class="card esquerda" data-aos="fade-left">
+                    <section class="card__logo">
+                        <img src="assets/agropalma.png" alt="logo empresa Agropalma">
+                    </section>
+                    <section>
+                        <h1 class="card__title">Agropalma – (Jul/2014 – Mar/2015)</h1>
+                        <h2 class="card__subtitle">Cargo: Analista de Cargos e Salários</h2>
+                        <p class="card__texto">Principais responsabilidades: <br>
+                            • Responsável pelas pesquisas salariais, avaliação de desempenho, analise de processos de
+                            aumento
+                            salarial por mérito e promoções, estudo de custos com pessoal e descrição de cargos.
+                            Utilizava o
+                            sistema Sênior; <br>
+                            • Participação em projetos: implantação de plano de saúde e de remuneração variável,
+                            reformulação de
+                            descrição de cargos e políticas de remuneração, cargos e salários. <br>
+                    </Section>
+                    </p>
+                </div>
+                <div class="card direita" data-aos="fade-right">
+                    <section class="card__logo">
+                        <img src="assets/cadam.png" alt="logo empresa CADAM">
+                    </section>
+                    <section>
+                        <h1 class="card__title">CADAM S.A. – (Abril/2012 – Jul/2014) </h1>
+                        <h2 class="card__subtitle">Cargo: Técnico Administrativo</h2>
+                        <p class="card__texto">Principais responsabilidades: <br>
+                            • Responsável por todos os processos de RH, assim como área de Relações Trabalhistas,
+                            exercendo
+                            atividades de departamento de pessoal (cálculos de folha de pagamento no sistema FPW,
+                            fiscalizações
+                            e auditorias, soluções pendências e problemas nos órgãos da Receita Federal, Caixa
+                            Econômica, e
+                            INSS, admissão, rescisão, homologação, folha de ponto, pagamentos e encargos); <br>
+                            • Representante do RH internacional; <br>
+                            • Responsável pelo recrutamento e seleção, treinamento e desenvolvimento, participação em
+                            reuniões
+                            estratégicas, avaliação de desempenho e orçamento de pessoal. <br>
+                    </Section>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</main>
-<footer class="rodape">
-    <p>Desenvolvido por Rafael Lima</p>
-</footer>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init(
-    offset="200",
-    delay="500",
-    duration="1000",
-    easing="ease-in-out",
-    mirror="true",
-    once="false",
-    anchor_placement="top-center",
-);
-</script>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Rafael Lima</p>
+    </footer>
+    <script src="/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            offset = "200",
+            delay = "500",
+            duration = "1000",
+            easing = "ease-in-out",
+            mirror = "true",
+            once = "false",
+            anchor_placement = "top-center",
+        );
+    </script>
 </body>
 
 </html>
