@@ -153,14 +153,14 @@ body {
 @media screen and (max-width: 1400px) {
     .btn_icon_header {
         display: block;
+        padding-bottom: 20%;
     }
     
     .navigation_header {
         position: absolute;
         flex-direction: column;
         top: 0;
-        background: var(--cor-hover);
-        color: var(--cor-principal);
+        background: var(--cor-secundaria);
         height: 1000%;
         width: 35vw;
         padding: 5% 15% 0 5%;
@@ -171,10 +171,10 @@ body {
         text-align: center;
         
     }
-
     .navigation_header a{
         margin-bottom: 15%;
         font-size: 1.2rem;
+        color: var(--cor-terciaria);
     }
 
     @keyframes showSidebar {
