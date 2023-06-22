@@ -14,7 +14,7 @@ var header           = document.getElementById('header');
         }
         else
         {
-            navigationHeader.style.marginLeft = '-100vw';
+            navigationHeader.style.marginLeft = '-150vw';
             navigationHeader.style.animationName = '';
             main.style.filter = '';
         }
@@ -30,7 +30,7 @@ var header           = document.getElementById('header');
     }
 
     window.addEventListener('resize', function(event) {
-        if(window.innerWidth > 768 && showSidebar) 
+        if(window.innerWidth > 1400 && showSidebar) 
         {  
             showSidebar = true;
             toggleSidebar();
