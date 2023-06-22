@@ -59,6 +59,7 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
+    viewport-fit:auto;
 }
 
 .title_highlight {
@@ -147,7 +148,7 @@ body {
     font-size: 1rem;
     font-family: var(--fonte-secundaria);
     font-weight: 400;
-    width: 150vw;
+    width: 120vw;
 }
 
 @media screen and (max-width: 1400px) {
@@ -190,6 +191,7 @@ body {
     .main {
         flex-direction: column-reverse;
         padding: 5%;
+        width: 100%;
     }
 
     .main_content {
