@@ -161,13 +161,18 @@ body {
         background: var(--cor-hover);
         height: 1000%;
         width: 35vw;
-        padding: 5% 20% 0 5%;
+        padding: 5% 15% 0 5%;
         animation-duration: 0.3s;
         margin-left: -100vw;
         flex-wrap: wrap;
         justify-content: flex-start;
         text-align: center;
         
+    }
+
+    .navigation_header a{
+        margin-bottom: 15%;
+        font-size: 1.2rem;
     }
 
     @keyframes showSidebar {
