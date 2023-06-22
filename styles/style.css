@@ -187,7 +187,7 @@ body {
         to {margin-left: -10vw;}
     }
 
-    .content {
+    .main {
         flex-direction: column-reverse;
         padding: 5%;
     }
