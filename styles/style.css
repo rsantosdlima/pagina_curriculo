@@ -160,6 +160,7 @@ body {
         flex-direction: column;
         top: 0;
         background: var(--cor-hover);
+        color: var(--cor-principal);
         height: 1000%;
         width: 35vw;
         padding: 5% 15% 0 5%;
