@@ -148,7 +148,7 @@ body {
     font-size: 1rem;
     font-family: var(--fonte-secundaria);
     font-weight: 400;
-    width: 120vw;
+    width: 100vw;
 }
 
 @media screen and (max-width: 1400px) {
@@ -211,6 +211,10 @@ body {
         padding: 0 0 0 0;
         width: 30%;
         height: 30%;
+    }
+
+    .footer {
+        width: 105vw;
     }
 }
 
