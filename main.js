@@ -8,13 +8,13 @@ var header           = document.getElementById('header');
         showSidebar = !showSidebar;
         if(showSidebar)
         {
-            navigationHeader.style.marginLeft = '-10vw';
+            navigationHeader.style.marginLeft = '0vw';
             navigationHeader.style.animationName = 'showSidebar';
             main.style.filter = 'blur(2px)';
         }
         else
         {
-            navigationHeader.style.marginLeft = '-150vw';
+            navigationHeader.style.marginLeft = '-100vw';
             navigationHeader.style.animationName = '';
             main.style.filter = '';
         }
