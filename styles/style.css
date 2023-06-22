@@ -38,7 +38,7 @@
 }
 
 a:hover {
-    color: var(--cor-secundaria);
+    color: var(--cor-hover);
     transition: 0.30s;
 }
 
